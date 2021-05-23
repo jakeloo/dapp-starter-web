@@ -1,16 +1,18 @@
 {
   "name": "vyper-web-starter",
   "version": "1.0.0",
-  "repository": "git@github.com:jakeloo/vyper-web-template.git",
+  "repository": "git@github.com:jakeloo/dapp-starter-web.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
+    "generate-types": "typechain --target=ethers-v5 'abi/*.json'",
     "lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "devDependencies": {
+    "@typechain/ethers-v5": "^7.0.0",
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
     "@types/node": "^15.0.1",
@@ -24,7 +26,9 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "ethers": "^5.0.0",
+    "mkdirp": "^1.0.4",
     "prettier": "^2.2.1",
+    "typechain": "^5.0.0",
     "typescript": "^4.2.4"
   },
   "dependencies": {
