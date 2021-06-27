@@ -5,8 +5,7 @@ import { isAddress } from "@ethersproject/address";
 import { AddressZero } from "@ethersproject/constants";
 import { useEthers } from "@usedapp/core";
 import { ContractAddress } from "constants/contract";
-import { Greeter__factory } from "types/ethers-contracts/factories/Greeter__factory";
-import { Greeter } from "types/ethers-contracts/Greeter";
+import { Greeter, Greeter__factory } from "types/ethers-contracts";
 
 export function useContract(abi: Interface, address: string): Contract | null {
   const { library, account } = useEthers();
