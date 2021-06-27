@@ -15,7 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "files": ["./hardhat.config.ts"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
