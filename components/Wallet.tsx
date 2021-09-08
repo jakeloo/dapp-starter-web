@@ -1,6 +1,6 @@
 import React from "react";
 import { useEtherBalance, useEthers } from "@usedapp/core";
-import { Button, Box, Heading, Stack, Text, useToast } from "@chakra-ui/react";
+import { Button, Heading, Stack, Text, useToast } from "@chakra-ui/react";
 import { formatEther } from "@ethersproject/units";
 import { BigNumber } from "@ethersproject/bignumber";
 

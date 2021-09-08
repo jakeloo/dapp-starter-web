@@ -1,5 +1,6 @@
 import { InjectedConnector } from "@web3-react/injected-connector";
+import { ChainId } from "@usedapp/core";
 
 export const injectedConnector = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42],
+  supportedChainIds: [ChainId.Rinkeby, ChainId.Ropsten],
 });
