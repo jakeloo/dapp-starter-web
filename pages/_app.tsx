@@ -6,9 +6,9 @@ import theme from "themes/chakraTheme";
 
 const config = {
   readOnlyChainId: ChainId.Ropsten,
+  supportedChains: [ChainId.Ropsten],
   readOnlyUrls: {
-    [ChainId.Ropsten]:
-      "https://eth-ropsten.alchemyapi.io/v2/IZ_oYU0U6z3qFNryO73Tx0iATXKrkEy1",
+    [ChainId.Ropsten]: `https://eth-ropsten.alchemyapi.io/v2/${process.env.NEXT_PUBLIC_ALCHEMY_API_KEY}`,
   },
 };
 
